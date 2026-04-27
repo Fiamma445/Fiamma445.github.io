@@ -260,7 +260,7 @@ h3 {
 
 .hero-visual {
   width: 100%;
-  min-height: 430px;
+  min-height: 380px;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -308,40 +308,9 @@ h3 {
   text-align: center;
 }
 
-.visual-metric-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 18px;
-}
-
-.visual-metric-grid div {
-  min-width: 0;
-  padding: 13px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8fafc;
-}
-
-.visual-metric-grid strong {
-  display: block;
-  color: var(--text);
-  font-size: 1.05rem;
-  line-height: 1;
-}
-
-.visual-metric-grid span {
-  display: block;
-  margin-top: 6px;
-  color: var(--soft);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .visual-chart {
   position: relative;
-  min-height: 184px;
+  min-height: 216px;
   padding: 26px 20px;
   border: 1px solid var(--line);
   border-radius: 8px;
