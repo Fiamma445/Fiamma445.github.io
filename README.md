@@ -1,4 +1,4 @@
-# Fiamma445 Data Portfolio Site
+# 박상현 Data Portfolio Site
 
 API 수집, EDA, 머신러닝, 웹 대시보드 배포 프로젝트를 한 화면에서 소개하는 정적 포트폴리오 사이트다.
 
