@@ -6,7 +6,7 @@
     <title>박상현 | 데이터 분석가 포트폴리오</title>
     <meta
       name="description"
-      content="API 데이터 수집, EDA, 머신러닝, 웹 대시보드 배포까지 연결한 데이터 분석가 포트폴리오"
+      content="API 수집부터 EDA, 머신러닝, 대시보드 설계까지 연결한 데이터 분석가 포트폴리오"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -27,40 +27,93 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-inner">
-          <p class="eyebrow">데이터 분석가 포트폴리오</p>
-          <h1 id="hero-title">
-            <span>박상현</span>
-            <span>포트폴리오</span>
-          </h1>
-          <p class="hero-copy">
-            공개 API와 게임·콘텐츠 데이터를 수집하고, EDA와 모델링을 거쳐
-            실제로 탐색 가능한 웹 대시보드로 연결한 프로젝트 쇼케이스
-          </p>
-          <div class="hero-actions" aria-label="대표 링크">
-            <a class="button primary" href="#projects">프로젝트 보기</a>
-            <a
-              class="button secondary"
-              href="https://github.com/Fiamma445"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
+          <div class="hero-content">
+            <p class="eyebrow">데이터 분석가 포트폴리오</p>
+            <h1 id="hero-title">
+              <span>박상현</span>
+              <span>포트폴리오</span>
+            </h1>
+            <p class="hero-copy">
+              API 수집부터 EDA, 모델링, 대시보드까지 이어지는 분석 흐름을
+              의사결정에 활용 가능한 프로젝트 결과물로 정리했습니다
+            </p>
+            <div class="hero-actions" aria-label="대표 링크">
+              <a class="button primary" href="#projects">프로젝트 보기</a>
+              <a
+                class="button secondary"
+                href="https://github.com/Fiamma445"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+            <dl class="hero-proof" aria-label="포트폴리오 핵심 수치">
+              <div>
+                <dt>3</dt>
+                <dd>완성 프로젝트</dd>
+              </div>
+              <div>
+                <dt>API</dt>
+                <dd>수집 파이프라인</dd>
+              </div>
+              <div>
+                <dt>ML</dt>
+                <dd>예측 모델링</dd>
+              </div>
+            </dl>
           </div>
-          <dl class="hero-proof" aria-label="포트폴리오 핵심 수치">
-            <div>
-              <dt>3</dt>
-              <dd>완성 프로젝트</dd>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual-header">
+              <span>Analysis Flow</span>
+              <strong>Portfolio</strong>
             </div>
-            <div>
-              <dt>API</dt>
-              <dd>수집 파이프라인</dd>
+
+            <div class="flow-row">
+              <span>Collect</span>
+              <span>Clean</span>
+              <span>Model</span>
+              <span>Visualize</span>
             </div>
-            <div>
-              <dt>ML</dt>
-              <dd>예측 모델링</dd>
+
+            <div class="visual-metric-grid">
+              <div>
+                <strong>3</strong>
+                <span>projects</span>
+              </div>
+              <div>
+                <strong>119K</strong>
+                <span>team rows</span>
+              </div>
+              <div>
+                <strong>90.5%</strong>
+                <span>model score</span>
+              </div>
             </div>
-          </dl>
+
+            <div class="visual-chart">
+              <span class="chart-row chart-row-a"></span>
+              <span class="chart-row chart-row-b"></span>
+              <span class="chart-row chart-row-c"></span>
+              <span class="chart-row chart-row-d"></span>
+              <svg class="trend-line" viewBox="0 0 360 120" role="img" aria-label="">
+                <polyline points="4,98 72,78 138,88 206,48 282,62 356,26" />
+                <circle cx="4" cy="98" r="5" />
+                <circle cx="72" cy="78" r="5" />
+                <circle cx="138" cy="88" r="5" />
+                <circle cx="206" cy="48" r="5" />
+                <circle cx="282" cy="62" r="5" />
+                <circle cx="356" cy="26" r="5" />
+              </svg>
+            </div>
+
+            <div class="quality-strip">
+              <span>ETL</span>
+              <span>Validation</span>
+              <span>Dashboard</span>
+            </div>
+          </div>
         </div>
       </section>
 
