@@ -234,6 +234,7 @@ h3 {
 }
 
 .signal-section,
+.skills-section,
 .projects-section,
 .process-section,
 .contact-section {
@@ -261,6 +262,79 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+}
+
+.skills-section {
+  padding-bottom: 54px;
+}
+
+.skill-panel {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.main-skill-panel {
+  padding: 30px 34px;
+}
+
+.skill-list,
+.credential-list {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.skill-list {
+  padding-left: 20px;
+}
+
+.skill-list li + li,
+.credential-list li + li {
+  margin-top: 8px;
+}
+
+.skill-list li,
+.credential-list li {
+  overflow-wrap: anywhere;
+}
+
+.skill-detail-grid {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.skill-detail-grid .skill-panel {
+  padding: 28px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-list span {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  background: var(--surface-strong);
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.credential-list {
+  padding-left: 18px;
 }
 
 .signal-item,
@@ -466,8 +540,9 @@ h3 {
 
 @media (max-width: 1080px) {
   .project-grid,
+  .skill-detail-grid,
   .signal-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .project-body p {
@@ -557,11 +632,30 @@ h3 {
   }
 
   .signal-section,
+  .skills-section,
   .projects-section,
   .process-section,
   .contact-section {
     width: calc(100% - 44px);
     padding: 64px 0;
+  }
+
+  .main-skill-panel,
+  .skill-detail-grid .skill-panel {
+    padding: 24px;
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .tech-list span {
+    justify-content: center;
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.84rem;
   }
 
   .split-heading,
