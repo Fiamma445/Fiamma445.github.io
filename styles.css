@@ -103,7 +103,7 @@ a {
   align-items: center;
   padding: 86px 40px 72px;
   background-image:
-    linear-gradient(90deg, rgba(13, 17, 16, 0.98) 0%, rgba(13, 17, 16, 0.86) 38%, rgba(13, 17, 16, 0.2) 100%),
+    linear-gradient(90deg, rgba(13, 17, 16, 0.99) 0%, rgba(13, 17, 16, 0.92) 44%, rgba(13, 17, 16, 0.68) 100%),
     url("./assets/hero-data-product.png");
   background-position: center;
   background-size: cover;
@@ -144,6 +144,8 @@ h2 {
   margin-bottom: 0;
   font-size: 2.3rem;
   line-height: 1.18;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 h3 {
@@ -240,7 +242,7 @@ h3 {
 }
 
 .section-heading h2 {
-  max-width: 780px;
+  max-width: 960px;
 }
 
 .split-heading {
@@ -480,14 +482,16 @@ h3 {
 
   .site-nav {
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
   }
 
   .hero {
     min-height: 80vh;
     padding: 76px 22px 54px;
     background-image:
-      linear-gradient(90deg, rgba(13, 17, 16, 0.98) 0%, rgba(13, 17, 16, 0.94) 58%, rgba(13, 17, 16, 0.58) 100%),
+      linear-gradient(90deg, rgba(13, 17, 16, 0.99) 0%, rgba(13, 17, 16, 0.97) 58%, rgba(13, 17, 16, 0.82) 100%),
       url("./assets/hero-data-product.png");
     background-position: 62% center;
   }
