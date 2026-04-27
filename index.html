@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiamma445 Data Portfolio</title>
+    <meta
+      name="description"
+      content="API 데이터 수집, EDA, 머신러닝, 웹 대시보드 배포까지 연결한 데이터 분석 포트폴리오"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Fiamma445 portfolio home">
+        <span class="brand-mark">F</span>
+        <span>Fiamma445</span>
+      </a>
+      <nav class="site-nav" aria-label="주요 섹션">
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Data Analyst Portfolio</p>
+          <h1 id="hero-title">
+            <span>Fiamma445</span>
+            <span>Data Portfolio</span>
+          </h1>
+          <p class="hero-copy">
+            공개 API와 게임·콘텐츠 데이터를 수집하고, EDA와 모델링을 거쳐
+            실제로 탐색 가능한 웹 대시보드로 연결한 프로젝트 쇼케이스
+          </p>
+          <div class="hero-actions" aria-label="대표 링크">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a
+              class="button secondary"
+              href="https://github.com/Fiamma445"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+          <dl class="hero-proof" aria-label="포트폴리오 핵심 수치">
+            <div>
+              <dt>3</dt>
+              <dd>Portfolio projects</dd>
+            </div>
+            <div>
+              <dt>API</dt>
+              <dd>Collection pipeline</dd>
+            </div>
+            <div>
+              <dt>ML</dt>
+              <dd>Prediction models</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="signal-section" aria-labelledby="signal-title">
+        <div class="section-heading">
+          <p class="eyebrow">Work Signals</p>
+          <h2 id="signal-title">분석 결과가 서비스 화면까지 이어지는 프로젝트</h2>
+        </div>
+        <div class="signal-grid">
+          <article class="signal-item">
+            <span class="signal-index">01</span>
+            <h3>API 데이터 파이프라인</h3>
+            <p>공식 API와 공개 데이터를 수집하고 분석 단위에 맞게 재구성</p>
+          </article>
+          <article class="signal-item">
+            <span class="signal-index">02</span>
+            <h3>EDA와 모델링</h3>
+            <p>분포, 관계, 성과 기준을 검증하고 예측 모델로 해석 보강</p>
+          </article>
+          <article class="signal-item">
+            <span class="signal-index">03</span>
+            <h3>대시보드 배포</h3>
+            <p>분석 결과를 PDF에 멈추지 않고 실제 탐색 도구로 구현</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Selected Projects</p>
+            <h2 id="projects-title">데이터를 의사결정 도구로 바꾼 작업들</h2>
+          </div>
+          <div class="filter-group" role="group" aria-label="프로젝트 필터">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+              All
+            </button>
+            <button class="filter-button" type="button" data-filter="ml" aria-pressed="false">
+              ML
+            </button>
+            <button class="filter-button" type="button" data-filter="dashboard" aria-pressed="false">
+              Dashboard
+            </button>
+            <button class="filter-button" type="button" data-filter="pipeline" aria-pressed="false">
+              Pipeline
+            </button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="ml dashboard pipeline" data-reveal>
+            <img
+              src="./assets/project-eternal-return.png"
+              alt="Eternal Return squad meta dashboard preview"
+              width="960"
+              height="540"
+            />
+            <div class="project-body">
+              <p class="project-type">Game Data · Meta Analytics</p>
+              <h3>Eternal Return Squad Meta Dashboard</h3>
+              <p>
+                상위권 스쿼드의 Top3 성과를 역할 조합, 듀오 시너지, 패치 흐름으로 분석한
+                웹 대시보드
+              </p>
+              <dl class="project-metrics">
+                <div>
+                  <dt>119,823</dt>
+                  <dd>team samples</dd>
+                </div>
+                <div>
+                  <dt>0.8755</dt>
+                  <dd>patch ROC-AUC</dd>
+                </div>
+                <div>
+                  <dt>4 tabs</dt>
+                  <dd>dashboard views</dd>
+                </div>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/Fiamma445/eternal-return-squad-meta-dashboard" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ml pipeline" data-reveal>
+            <img
+              src="./assets/project-coc.png"
+              alt="Clash of Clans clan prediction project preview"
+              width="960"
+              height="540"
+            />
+            <div class="project-body">
+              <p class="project-type">Game Data · Prediction Model</p>
+              <h3>Clash of Clans Clan ML Prediction</h3>
+              <p>
+                클랜 생존 가능성과 리그 성장 잠재력을 예측해 신규 유저와 클랜장의 의사결정을
+                돕는 모델링 프로젝트
+              </p>
+              <dl class="project-metrics">
+                <div>
+                  <dt>3.55M</dt>
+                  <dd>raw rows</dd>
+                </div>
+                <div>
+                  <dt>90.5%</dt>
+                  <dd>ghost clans</dd>
+                </div>
+                <div>
+                  <dt>97.88%</dt>
+                  <dd>±1 tier accuracy</dd>
+                </div>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/Fiamma445/coc-clan-ML-prediction" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="dashboard pipeline" data-reveal>
+            <img
+              src="./assets/project-holodex.png"
+              alt="Holodex API data explorer preview"
+              width="960"
+              height="540"
+            />
+            <div class="project-body">
+              <p class="project-type">Content Data · Search Service</p>
+              <h3>HoloProject Vtuber Data Explorer</h3>
+              <p>
+                Holodex API 데이터를 정제해 멤버 교차 검색, 콜라보 네트워크, 연도별 콘텐츠
+                흐름을 탐색하는 서비스
+              </p>
+              <dl class="project-metrics">
+                <div>
+                  <dt>API</dt>
+                  <dd>ETL pipeline</dd>
+                </div>
+                <div>
+                  <dt>JSON1</dt>
+                  <dd>SQLite modeling</dd>
+                </div>
+                <div>
+                  <dt>Top 30</dt>
+                  <dd>collab ranking</dd>
+                </div>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/Fiamma445/Holodex-Api-Data-Search-Project" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+                <a href="https://holo-search.xyz" target="_blank" rel="noreferrer">
+                  Live
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <p class="eyebrow">Operating Pattern</p>
+          <h2 id="process-title">반복 가능한 데이터 프로젝트 흐름</h2>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span>01</span>
+            <strong>Collect</strong>
+            <p>API와 공개 데이터를 수집하고, 재현 가능한 설정과 수집 기준을 남김</p>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>Structure</strong>
+            <p>원천 row를 분석 질문에 맞는 mart, signature, 집계 단위로 변환</p>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>Model</strong>
+            <p>EDA 결과를 모델링으로 검증하고 누수, 표본, 기준선 문제를 점검</p>
+          </li>
+          <li>
+            <span>04</span>
+            <strong>Ship</strong>
+            <p>결과를 대시보드, 서비스, 보고서로 연결해 실제 사용 가능한 산출물로 배포</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Next</p>
+          <h2 id="contact-title">프로젝트 링크를 하나의 포트폴리오 경험으로 묶기</h2>
+          <p>
+            각 프로젝트는 개별 GitHub README로 상세 설명을 제공하고, 이 사이트는 전체 역량과
+            대표 산출물을 빠르게 훑는 첫 관문으로 사용
+          </p>
+        </div>
+        <a class="button primary" href="https://github.com/Fiamma445" target="_blank" rel="noreferrer">
+          GitHub Profile
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Fiamma445 Data Portfolio</span>
+      <span>API · EDA · ML · Dashboard</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
