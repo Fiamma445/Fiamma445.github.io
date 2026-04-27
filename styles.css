@@ -1,18 +1,19 @@
 :root {
-  --bg: #0d1110;
-  --surface: #151c1b;
-  --surface-strong: #1c2423;
-  --line: #2f3d38;
-  --line-strong: #41544d;
-  --text: #f7f3ea;
-  --muted: #a8b8b1;
-  --soft: #768780;
-  --teal: #46dfca;
-  --blue: #92a8ff;
-  --amber: #f7b267;
-  --coral: #ef6f6c;
-  --magenta: #f07cff;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+  color-scheme: light;
+  --bg: #f7f8fb;
+  --surface: #ffffff;
+  --surface-strong: #eef2f7;
+  --line: #d9e1ec;
+  --line-strong: #aab7c8;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --soft: #8a94a6;
+  --accent: #2563eb;
+  --blue: #4f46e5;
+  --amber: #b76e18;
+  --coral: #d14b46;
+  --magenta: #8b5cf6;
+  --shadow: 0 24px 70px rgba(31, 41, 55, 0.1);
 }
 
 * {
@@ -51,8 +52,8 @@ a {
   gap: 24px;
   min-height: 64px;
   padding: 0 40px;
-  border-bottom: 1px solid rgba(65, 84, 77, 0.72);
-  background: rgba(13, 17, 16, 0.9);
+  border-bottom: 1px solid rgba(217, 225, 236, 0.9);
+  background: rgba(247, 248, 251, 0.88);
   backdrop-filter: blur(14px);
 }
 
@@ -77,9 +78,9 @@ a {
   width: 30px;
   height: 30px;
   place-items: center;
-  border: 1px solid var(--teal);
+  border: 1px solid var(--accent);
   border-radius: 8px;
-  color: var(--teal);
+  color: var(--accent);
 }
 
 .site-nav {
@@ -94,16 +95,16 @@ a {
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--teal);
+  color: var(--accent);
 }
 
 .hero {
-  min-height: 82vh;
+  min-height: 760px;
   display: flex;
-  align-items: center;
-  padding: 86px 40px 72px;
+  align-items: flex-start;
+  padding: 210px 40px 72px;
   background-image:
-    linear-gradient(90deg, rgba(13, 17, 16, 0.99) 0%, rgba(13, 17, 16, 0.92) 44%, rgba(13, 17, 16, 0.68) 100%),
+    linear-gradient(90deg, rgba(247, 248, 251, 0.99) 0%, rgba(247, 248, 251, 0.91) 46%, rgba(247, 248, 251, 0.42) 100%),
     url("./assets/hero-data-product.png");
   background-position: center;
   background-size: cover;
@@ -116,7 +117,7 @@ a {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--teal);
+  color: var(--accent);
   font-size: 0.9rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -138,6 +139,10 @@ h1 {
 
 h1 span {
   display: inline;
+}
+
+.mobile-line-break {
+  display: none;
 }
 
 h2 {
@@ -184,18 +189,18 @@ h3 {
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
-  border-color: var(--teal);
+  border-color: var(--accent);
 }
 
 .button.primary {
-  color: #07110f;
-  background: var(--teal);
-  border-color: var(--teal);
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .button.secondary {
   color: var(--text);
-  background: rgba(21, 28, 27, 0.72);
+  background: rgba(255, 255, 255, 0.74);
 }
 
 .hero-proof,
@@ -260,6 +265,7 @@ h3 {
 
 .signal-item,
 .project-card {
+  min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -285,6 +291,7 @@ h3 {
 .contact-section p {
   color: var(--muted);
   line-height: 1.7;
+  overflow-wrap: anywhere;
 }
 
 .filter-group {
@@ -308,9 +315,9 @@ h3 {
 .filter-button:hover,
 .filter-button:focus-visible,
 .filter-button.is-active {
-  color: #08110f;
-  border-color: var(--teal);
-  background: var(--teal);
+  color: #ffffff;
+  border-color: var(--accent);
+  background: var(--accent);
 }
 
 .project-grid {
@@ -453,7 +460,7 @@ h3 {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(70, 223, 202, 0.38);
+  outline: 3px solid rgba(37, 99, 235, 0.26);
   outline-offset: 3px;
 }
 
@@ -488,10 +495,10 @@ h3 {
   }
 
   .hero {
-    min-height: 80vh;
-    padding: 76px 22px 54px;
+    min-height: 740px;
+    padding: 180px 22px 54px;
     background-image:
-      linear-gradient(90deg, rgba(13, 17, 16, 0.99) 0%, rgba(13, 17, 16, 0.97) 58%, rgba(13, 17, 16, 0.82) 100%),
+      linear-gradient(90deg, rgba(247, 248, 251, 0.99) 0%, rgba(247, 248, 251, 0.97) 58%, rgba(247, 248, 251, 0.82) 100%),
       url("./assets/hero-data-product.png");
     background-position: 62% center;
   }
@@ -511,7 +518,13 @@ h3 {
   }
 
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.65rem;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .mobile-line-break {
+    display: block;
   }
 
   .hero-copy {
