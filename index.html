@@ -9,6 +9,7 @@
       content="게임과 스트리밍 서비스에서 직접 느낀 불편을 데이터 정제, 검증, 모델링, 대시보드로 풀어낸 박상현의 포트폴리오"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -31,8 +32,8 @@
             <p class="pill">게임·스트리밍 서비스에서 출발한 데이터 분석</p>
             <h1>불편했던 장면을 데이터로 다시 확인합니다</h1>
             <p>
-              티어표로 보이지 않는 스쿼드 조합, 검색으로 놓치는 콜라보 흐름, 모델 성능 뒤에 숨어 있는
-              데이터 왜곡을 직접 수집하고 검증해 판단 가능한 화면으로 만들었습니다.
+              티어만으로는 보이지 않는 스쿼드 조합, 흩어진 방송 아카이브와 콜라보 맥락, 모델 성능 뒤에
+              숨은 데이터 왜곡을 직접 수집하고 검증해 판단 가능한 화면으로 만들었습니다.
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#projects">프로젝트 보기</a>
@@ -45,10 +46,27 @@
           </div>
 
           <figure class="hero-visual">
-            <img src="./assets/project-eternal-return.png" alt="이터널 리턴 스쿼드 메타 대시보드 화면" />
-            <figcaption>
-              이터널 리턴 상위권 스쿼드 데이터를 팀 단위로 재구성해 역할 조합과 성과를 비교한 화면
-            </figcaption>
+            <div class="showcase-viewport" data-drag-scroll aria-label="프로젝트 대표 화면">
+              <div class="showcase-track">
+                <div class="showcase-slide">
+                  <img src="./assets/project-eternal-return.png" alt="이터널 리턴 캐릭터 분석 대시보드 화면" />
+                  <p>이터널 리턴 상위권 스쿼드 데이터를 캐릭터와 역할 기준으로 비교한 화면</p>
+                </div>
+                <div class="showcase-slide">
+                  <img src="./assets/project-holodex.png" alt="홀로덱스 아카이브 검색과 콜라보 필터 화면" />
+                  <p>흩어진 방송 아카이브를 멤버와 콜라보 기준으로 다시 탐색하는 화면</p>
+                </div>
+                <div class="showcase-slide">
+                  <img src="./assets/project-coc.png" alt="Clash of Clans 클랜 운영 분석 화면" />
+                  <p>유령 클랜과 활성 클랜을 분리해 모델링 기준을 다시 세운 화면</p>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-dots" aria-hidden="true">
+              <span class="is-active"></span>
+              <span></span>
+              <span></span>
+            </div>
           </figure>
         </div>
       </section>
@@ -66,8 +84,8 @@
           </article>
           <article>
             <span>02</span>
-            <h3>영상 검색은 되는데, 멤버의 흐름은 왜 보기 어렵지?</h3>
-            <p>개별 영상은 찾을 수 있어도 장기 방송 흐름과 콜라보 관계를 한 화면에서 보기 어려웠습니다.</p>
+            <h3>보고 싶은 방송과 콜라보 흐름을 왜 한 번에 찾기 어렵지?</h3>
+            <p>제목, 날짜, 멤버, 콜라보 여부가 흩어져 있어 원하는 방송을 찾고 관계를 이어 보기 어려웠습니다.</p>
           </article>
           <article>
             <span>03</span>
@@ -105,8 +123,7 @@
             <h2>핵심 화면으로 먼저 보여주기</h2>
           </div>
           <p>
-            각 프로젝트는 GitHub 링크를 열기 전에 메인 페이지에서 핵심 문제와 검증 기준이 먼저 읽히도록
-            정리했습니다.
+            직접 불편했던 지점, 확인 기준, 실제 화면만 남겼습니다.
           </p>
         </div>
 
@@ -135,8 +152,7 @@
               <p class="project-type">스트리밍 데이터 탐색</p>
               <h3>HoloProject Vtuber Data Explorer</h3>
               <p>
-                개별 영상 검색에서 멈추지 않고, 멤버별 아카이브와 콜라보 관계를 함께 탐색할 수 있게
-                만들었습니다.
+                원하는 방송을 찾기 어려운 아카이브를 멤버별 검색과 콜라보 필터로 다시 묶었습니다.
               </p>
               <ul>
                 <li>영상 103,000건, 채널 73개 정리</li>
