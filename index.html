@@ -3,365 +3,189 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>박상현 | 데이터 분석가 포트폴리오</title>
+    <title>박상현 | 게임·스트리밍 데이터 분석 포트폴리오</title>
     <meta
       name="description"
-      content="API 수집부터 EDA, 머신러닝, 대시보드 설계까지 연결한 데이터 분석가 포트폴리오"
+      content="게임과 스트리밍 서비스에서 직접 느낀 불편을 데이터 정제, 검증, 모델링, 대시보드로 풀어낸 박상현의 포트폴리오"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="박상현 포트폴리오 홈">
-        <span class="brand-mark">P</span>
-        <span>박상현</span>
+      <a class="brand" href="#top">
+        <strong>박상현</strong>
+        <span>게임 데이터 · 스트리밍 분석</span>
       </a>
-      <nav class="site-nav" aria-label="주요 섹션">
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#questions">관점</a>
+        <a href="#principles">기준</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#direction">방향</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero-section">
         <div class="hero-inner">
-          <div class="hero-content">
-            <p class="eyebrow">데이터 분석가 포트폴리오</p>
-            <h1 id="hero-title">
-              <span>박상현</span>
-              <span>포트폴리오</span>
-            </h1>
-            <p class="hero-copy">
-              API 수집부터 EDA, 모델링, 대시보드까지 이어지는 분석 흐름을
-              의사결정에 활용 가능한 프로젝트 결과물로 정리했습니다
+          <div class="hero-copy">
+            <p class="pill">게임·스트리밍 서비스에서 출발한 데이터 분석</p>
+            <h1>불편했던 장면을 데이터로 다시 확인합니다</h1>
+            <p>
+              티어표로 보이지 않는 스쿼드 조합, 검색으로 놓치는 콜라보 흐름, 모델 성능 뒤에 숨어 있는
+              데이터 왜곡을 직접 수집하고 검증해 판단 가능한 화면으로 만들었습니다.
             </p>
-            <div class="hero-actions" aria-label="대표 링크">
+            <div class="hero-actions">
               <a class="button primary" href="#projects">프로젝트 보기</a>
-              <a
-                class="button secondary"
-                href="https://github.com/Fiamma445"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
+              <a class="button secondary" href="https://github.com/Fiamma445" target="_blank" rel="noreferrer">GitHub</a>
             </div>
-            <dl class="hero-proof" aria-label="포트폴리오 핵심 수치">
-              <div>
-                <dt>3</dt>
-                <dd>완성 프로젝트</dd>
-              </div>
-              <div>
-                <dt>API</dt>
-                <dd>수집 파이프라인</dd>
-              </div>
-              <div>
-                <dt>ML</dt>
-                <dd>예측 모델링</dd>
-              </div>
-            </dl>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-visual-header">
-              <span>Analysis Flow</span>
-              <strong>Portfolio</strong>
-            </div>
-
-            <div class="flow-row">
-              <span>Collect</span>
-              <span>Clean</span>
-              <span>Model</span>
-              <span>Visualize</span>
-            </div>
-
-            <div class="visual-chart">
-              <span class="chart-row chart-row-a"></span>
-              <span class="chart-row chart-row-b"></span>
-              <span class="chart-row chart-row-c"></span>
-              <span class="chart-row chart-row-d"></span>
-              <svg class="trend-line" viewBox="0 0 360 120" role="img" aria-label="">
-                <polyline points="4,98 72,78 138,88 206,48 282,62 356,26" />
-                <circle cx="4" cy="98" r="5" />
-                <circle cx="72" cy="78" r="5" />
-                <circle cx="138" cy="88" r="5" />
-                <circle cx="206" cy="48" r="5" />
-                <circle cx="282" cy="62" r="5" />
-                <circle cx="356" cy="26" r="5" />
-              </svg>
-            </div>
-
-            <div class="quality-strip">
-              <span>ETL</span>
-              <span>Validation</span>
-              <span>Dashboard</span>
+            <div class="hero-note">
+              <span>주요 흐름</span>
+              문제 발견 → 데이터 기준 설정 → 검증 → 대시보드
             </div>
           </div>
+
+          <figure class="hero-visual">
+            <img src="./assets/project-eternal-return.png" alt="이터널 리턴 스쿼드 메타 대시보드 화면" />
+            <figcaption>
+              이터널 리턴 상위권 스쿼드 데이터를 팀 단위로 재구성해 역할 조합과 성과를 비교한 화면
+            </figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="skills-section" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="eyebrow">핵심 역량</p>
-          <h2 id="skills-title">분석부터 시각화까지 <br class="mobile-line-break" />연결하는 역량</h2>
+      <section class="questions-section" id="questions">
+        <div class="section-heading centered">
+          <p class="section-kicker">직접 쓰며 느낀 문제들</p>
+          <h2>이런 질문에서 시작했습니다</h2>
         </div>
-
-        <div class="skill-panel main-skill-panel">
-          <ul class="skill-list">
-            <li>의사결정 지원을 위한 데이터 분석</li>
-            <li>SQL/Python 기반 수집, 전처리, EDA, ML</li>
-            <li>대시보드와 보고서 중심의 시각화</li>
-            <li>AI 리터러시 기반 코드·산출물 교차 검증</li>
-            <li>SQA 경험 기반 데이터 품질 검증과 분석 산출물 교차 확인</li>
-          </ul>
-        </div>
-
-        <div class="skill-detail-grid">
-          <article class="skill-panel">
-            <h3>보유 기술</h3>
-            <div class="tech-list" aria-label="보유 기술 목록">
-              <span>SQL</span>
-              <span>Python</span>
-              <span>Pandas</span>
-              <span>NumPy</span>
-              <span>scikit-learn</span>
-              <span>LightGBM</span>
-              <span>Tableau</span>
-              <span>Dashboard Design</span>
-              <span>Jupyter Notebook</span>
-              <span>ETL Pipeline</span>
-              <span>Data Validation</span>
-              <span>Workflow Automation</span>
-              <span>GitHub</span>
-              <span>API</span>
-              <span>Codex</span>
-              <span>Jira</span>
-              <span>Confluence</span>
-              <span>Slack</span>
-            </div>
+        <div class="question-grid">
+          <article>
+            <span>01</span>
+            <h3>티어표는 많은데, 3인 조합은 어떻게 봐야 하지?</h3>
+            <p>캐릭터 하나의 성능보다 역할 조합과 듀오 시너지가 더 중요해지는 순간이 있었습니다.</p>
           </article>
-          <article class="skill-panel">
-            <h3>자격 및 교육</h3>
-            <ul class="credential-list">
-              <li>데이터분석 준전문가(ADsP)</li>
-              <li>ISTQB CTFL (2025.04)</li>
-              <li>빅데이터 기반 품질관리(QA, QC) 양성과정</li>
-              <li>팀 프로젝트 기반 데이터 분석 실습</li>
-            </ul>
+          <article>
+            <span>02</span>
+            <h3>영상 검색은 되는데, 멤버의 흐름은 왜 보기 어렵지?</h3>
+            <p>개별 영상은 찾을 수 있어도 장기 방송 흐름과 콜라보 관계를 한 화면에서 보기 어려웠습니다.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>모델 성능이 높으면, 그 결과를 그대로 믿어도 될까?</h3>
+            <p>100% 승률, 소수 표본, 경기 결과 변수처럼 결과를 좋아 보이게 만드는 조건을 먼저 의심했습니다.</p>
           </article>
         </div>
       </section>
 
-      <section class="signal-section" aria-labelledby="signal-title">
-        <div class="section-heading">
-          <p class="eyebrow">작업 범위</p>
-          <h2 id="signal-title">분석 결과가 서비스 <br class="mobile-line-break" />화면까지 이어지는 프로젝트</h2>
+      <section class="principles-section" id="principles">
+        <div class="section-heading centered">
+          <p class="section-kicker">분석할 때 붙잡은 기준</p>
+          <h2>숫자보다 먼저 확인한 것들</h2>
         </div>
-        <div class="signal-grid">
-          <article class="signal-item">
-            <span class="signal-index">01</span>
-            <h3>API 데이터 파이프라인</h3>
-            <p>공식 API와 공개 데이터를 수집하고 분석 단위에 맞게 재구성</p>
+        <div class="principle-grid">
+          <article>
+            <h3>원천 데이터를 그대로 믿지 않기</h3>
+            <p>이상치, 누수 변수, 표본 수를 먼저 확인해 결과가 좋아 보이는 이유를 따졌습니다.</p>
           </article>
-          <article class="signal-item">
-            <span class="signal-index">02</span>
-            <h3>EDA와 모델링</h3>
-            <p>분포, 관계, 성과 기준을 검증하고 예측 모델로 해석 보강</p>
+          <article>
+            <h3>분석 단위를 다시 자르기</h3>
+            <p>개인 row를 팀 단위로, API JSON을 검색·통계 단위로 바꿔 실제 질문에 맞는 구조를 만들었습니다.</p>
           </article>
-          <article class="signal-item">
-            <span class="signal-index">03</span>
-            <h3>대시보드 배포</h3>
-            <p>분석 결과를 PDF에 멈추지 않고 실제 탐색 도구로 구현</p>
+          <article>
+            <h3>다시 쓸 수 있는 화면으로 남기기</h3>
+            <p>보고서에서 끝내지 않고 유저나 운영자가 반복해서 확인할 수 있는 대시보드로 연결했습니다.</p>
           </article>
         </div>
       </section>
 
-      <section class="projects-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading split-heading">
+      <section class="projects-section" id="projects">
+        <div class="section-heading split">
           <div>
-            <p class="eyebrow">Selected Projects</p>
-            <h2 id="projects-title">데이터를 의사결정 도구로 바꾼 작업들</h2>
+            <p class="section-kicker">프로젝트</p>
+            <h2>핵심 화면으로 먼저 보여주기</h2>
           </div>
-          <div class="filter-group" role="group" aria-label="프로젝트 필터">
-            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
-              All
-            </button>
-            <button class="filter-button" type="button" data-filter="ml" aria-pressed="false">
-              ML
-            </button>
-            <button class="filter-button" type="button" data-filter="dashboard" aria-pressed="false">
-              Dashboard
-            </button>
-            <button class="filter-button" type="button" data-filter="pipeline" aria-pressed="false">
-              Pipeline
-            </button>
-          </div>
+          <p>
+            각 프로젝트는 GitHub 링크를 열기 전에 메인 페이지에서 핵심 문제와 검증 기준이 먼저 읽히도록
+            정리했습니다.
+          </p>
         </div>
 
         <div class="project-grid">
-          <article class="project-card" data-tags="ml dashboard pipeline" data-reveal>
-            <img
-              src="./assets/project-eternal-return.png"
-              alt="Eternal Return squad meta dashboard preview"
-              width="960"
-              height="540"
-            />
+          <article class="project-card">
+            <img src="./assets/project-eternal-return.png" alt="이터널 리턴 역할 조합 분석 대시보드" />
             <div class="project-body">
-              <p class="project-type">Game Data · Meta Analytics</p>
-              <h3>Eternal Return Squad Meta Dashboard</h3>
+              <p class="project-type">게임 메타 대시보드</p>
+              <h3>Eternal Return 상위권 스쿼드 메타 분석</h3>
               <p>
-                상위권 스쿼드의 Top3 성과를 역할 조합, 듀오 시너지, 패치 흐름으로 분석한
-                웹 대시보드
+                캐릭터 티어표만으로는 3인 스쿼드 성과를 설명하기 어려워, 개인 전적 row를 팀 단위로
+                재구성했습니다.
               </p>
-              <dl class="project-metrics">
-                <div>
-                  <dt>119,823</dt>
-                  <dd>team samples</dd>
-                </div>
-                <div>
-                  <dt>0.8755</dt>
-                  <dd>patch ROC-AUC</dd>
-                </div>
-                <div>
-                  <dt>4 tabs</dt>
-                  <dd>dashboard views</dd>
-                </div>
-              </dl>
-              <div class="project-links">
-                <a href="https://github.com/Fiamma445/eternal-return-squad-meta-dashboard" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-              </div>
+              <ul>
+                <li>119,823개 3인 팀 표본 구성</li>
+                <li>경기 결과 누수 변수 제거</li>
+                <li>역할 조합·듀오 시너지·패치 흐름 시각화</li>
+              </ul>
+              <a href="https://github.com/Fiamma445/eternal-return-squad-meta-dashboard" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
 
-          <article class="project-card" data-tags="ml pipeline" data-reveal>
-            <img
-              src="./assets/project-coc.png"
-              alt="Clash of Clans clan prediction project preview"
-              width="960"
-              height="540"
-            />
+          <article class="project-card">
+            <img src="./assets/project-holodex.png" alt="홀로덱스 콜라보 필터 대시보드" />
             <div class="project-body">
-              <p class="project-type">Game Data · Prediction Model</p>
-              <h3>Clash of Clans Clan ML Prediction</h3>
-              <p>
-                클랜 생존 가능성과 리그 성장 잠재력을 예측해 신규 유저와 클랜장의 의사결정을
-                돕는 모델링 프로젝트
-              </p>
-              <dl class="project-metrics">
-                <div>
-                  <dt>3.55M</dt>
-                  <dd>raw rows</dd>
-                </div>
-                <div>
-                  <dt>90.5%</dt>
-                  <dd>ghost clans</dd>
-                </div>
-                <div>
-                  <dt>97.88%</dt>
-                  <dd>±1 tier accuracy</dd>
-                </div>
-              </dl>
-              <div class="project-links">
-                <a href="https://github.com/Fiamma445/coc-clan-ML-prediction" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="dashboard pipeline" data-reveal>
-            <img
-              src="./assets/project-holodex.png"
-              alt="Holodex API data explorer preview"
-              width="960"
-              height="540"
-            />
-            <div class="project-body">
-              <p class="project-type">Content Data · Search Service</p>
+              <p class="project-type">스트리밍 데이터 탐색</p>
               <h3>HoloProject Vtuber Data Explorer</h3>
               <p>
-                Holodex API 데이터를 정제해 멤버 교차 검색, 콜라보 네트워크, 연도별 콘텐츠
-                흐름을 탐색하는 서비스
+                개별 영상 검색에서 멈추지 않고, 멤버별 아카이브와 콜라보 관계를 함께 탐색할 수 있게
+                만들었습니다.
               </p>
-              <dl class="project-metrics">
-                <div>
-                  <dt>API</dt>
-                  <dd>ETL pipeline</dd>
-                </div>
-                <div>
-                  <dt>JSON1</dt>
-                  <dd>SQLite modeling</dd>
-                </div>
-                <div>
-                  <dt>Top 30</dt>
-                  <dd>collab ranking</dd>
-                </div>
-              </dl>
+              <ul>
+                <li>영상 103,000건, 채널 73개 정리</li>
+                <li>SQLite JSON1 기반 하이브리드 모델링</li>
+                <li>아카이브 검색·콜라보 OR/AND 필터 구현</li>
+              </ul>
               <div class="project-links">
-                <a href="https://github.com/Fiamma445/Holodex-Api-Data-Search-Project" target="_blank" rel="noreferrer">
-                  GitHub
-                </a>
-                <a href="https://holo-search.xyz" target="_blank" rel="noreferrer">
-                  Live
-                </a>
+                <a href="https://github.com/Fiamma445/Holodex-Api-Data-Search-Project" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://holo-search.xyz" target="_blank" rel="noreferrer">Live</a>
               </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/project-coc.png" alt="Clash of Clans 클랜 운영 분석 썸네일" />
+            <div class="project-body">
+              <p class="project-type">게임 데이터 예측 모델</p>
+              <h3>Clash of Clans 클랜 생존·리그 예측</h3>
+              <p>
+                전체 데이터를 그대로 모델링하지 않고 유령 클랜을 먼저 분리해 활성 클랜의 운영 기준을
+                다시 봤습니다.
+              </p>
+              <ul>
+                <li>원본 355만 건 중 유령 클랜 90.5% 분리</li>
+                <li>war_total 20회 이상 기준으로 승률 재검증</li>
+                <li>리그 예측 ±1 티어 허용 정확도 97.88%</li>
+              </ul>
+              <a href="https://github.com/Fiamma445/coc-clan-ML-prediction" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="process-section" id="process" aria-labelledby="process-title">
-        <div class="section-heading">
-          <p class="eyebrow">Operating Pattern</p>
-          <h2 id="process-title">반복 가능한 데이터 프로젝트 흐름</h2>
-        </div>
-        <ol class="process-list">
-          <li>
-            <span>01</span>
-            <strong>Collect</strong>
-            <p>API와 공개 데이터를 수집하고, 재현 가능한 설정과 수집 기준을 남김</p>
-          </li>
-          <li>
-            <span>02</span>
-            <strong>Structure</strong>
-            <p>원천 row를 분석 질문에 맞는 mart, signature, 집계 단위로 변환</p>
-          </li>
-          <li>
-            <span>03</span>
-            <strong>Model</strong>
-            <p>EDA 결과를 모델링으로 검증하고 누수, 표본, 기준선 문제를 점검</p>
-          </li>
-          <li>
-            <span>04</span>
-            <strong>Ship</strong>
-            <p>결과를 대시보드, 서비스, 보고서로 연결해 실제 사용 가능한 산출물로 배포</p>
-          </li>
-        </ol>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Next</p>
-          <h2 id="contact-title">프로젝트 링크를 하나의 포트폴리오 경험으로 묶기</h2>
+      <section class="direction-section" id="direction">
+        <div class="section-heading centered">
+          <p class="section-kicker">앞으로의 방향</p>
+          <h2>라이브 서비스의 변화를 더 잘 읽고 싶습니다</h2>
           <p>
-            각 프로젝트는 개별 GitHub README로 상세 설명을 제공
+            게임 운영, 패치, 이벤트, 스트리밍 콘텐츠처럼 사용자의 반응이 빠르게 변하는 서비스에 관심이
+            많습니다. CS 기초와 데이터 분석 역량을 같이 쌓으며, 문제를 제대로 자르고 다시 쓸 수 있는
+            화면으로 남기는 분석가로 성장하고 싶습니다.
           </p>
         </div>
-        <a class="button primary" href="https://github.com/Fiamma445" target="_blank" rel="noreferrer">
-          GitHub Profile
-        </a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>박상현 포트폴리오</span>
-      <span>API · EDA · ML · Dashboard</span>
+      <p>박상현 데이터 분석 포트폴리오</p>
+      <a href="https://github.com/Fiamma445" target="_blank" rel="noreferrer">GitHub Profile</a>
     </footer>
-
-    <script src="./script.js"></script>
   </body>
 </html>
