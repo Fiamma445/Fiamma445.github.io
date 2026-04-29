@@ -398,6 +398,11 @@ section {
   overflow: hidden;
 }
 
+.project-card.text-only {
+  display: flex;
+  align-items: center;
+}
+
 .project-card img {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -408,6 +413,10 @@ section {
 
 .project-body {
   padding: 24px;
+}
+
+.project-card.text-only .project-body {
+  padding: 30px;
 }
 
 .project-type {
