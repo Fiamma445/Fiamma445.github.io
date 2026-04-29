@@ -366,10 +366,6 @@ section {
   gap: 22px;
 }
 
-.featured-projects {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .question-grid article,
 .principle-grid article,
 .project-card {
@@ -459,44 +455,6 @@ section {
   gap: 14px;
 }
 
-.project-compact {
-  width: min(1080px, calc(100% - 48px));
-  margin: 22px auto 0;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
-  gap: 36px;
-  padding: 28px 32px;
-  border: 1px solid #e6eaf0;
-  border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 12px 28px rgba(31, 41, 55, 0.04);
-}
-
-.project-compact h3 {
-  margin-bottom: 10px;
-}
-
-.project-compact p {
-  margin-bottom: 0;
-  color: var(--muted);
-  line-height: 1.72;
-}
-
-.compact-detail {
-  display: grid;
-  align-content: center;
-  gap: 18px;
-}
-
-.compact-detail ul {
-  display: grid;
-  gap: 7px;
-  margin: 0;
-  padding-left: 1.05rem;
-  font-size: 0.92rem;
-  line-height: 1.58;
-}
-
 .direction-section .section-heading {
   max-width: 860px;
   margin-bottom: 0;
@@ -548,8 +506,7 @@ section {
   .section-heading.split,
   .question-grid,
   .principle-grid,
-  .project-grid,
-  .project-compact {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -563,7 +520,6 @@ section {
   .question-grid,
   .principle-grid,
   .project-grid,
-  .project-compact,
   .site-footer {
     width: min(720px, calc(100% - 40px));
   }
@@ -612,15 +568,13 @@ section {
   .question-grid,
   .principle-grid,
   .project-grid,
-  .project-compact,
   .site-footer {
     width: calc(100% - 32px);
   }
 
   .question-grid article,
   .principle-grid article,
-  .project-body,
-  .project-compact {
+  .project-body {
     padding: 22px;
   }
 
