@@ -118,14 +118,15 @@ li {
 .hero-inner {
   position: relative;
   z-index: 1;
-  width: min(1080px, calc(100% - 48px));
-  min-height: 620px;
+  width: min(1040px, calc(100% - 64px));
+  min-height: 600px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+  grid-template-columns: minmax(360px, 420px) minmax(420px, 500px);
   align-items: center;
-  gap: 78px;
-  padding: 76px 0 80px;
+  justify-content: center;
+  gap: clamp(88px, 8vw, 132px);
+  padding: 72px 0 78px;
 }
 
 .pill,
@@ -139,7 +140,7 @@ li {
   display: inline-flex;
   align-items: center;
   min-height: 30px;
-  margin: 0 0 22px;
+  margin: 0 0 26px;
   padding: 0 13px;
   border: 1px solid #bfd3ff;
   border-radius: 999px;
@@ -161,10 +162,10 @@ h3 {
 }
 
 h1 {
-  max-width: 540px;
-  margin-bottom: 22px;
-  font-size: clamp(2.75rem, 4.7vw, 4.65rem);
-  line-height: 1.06;
+  max-width: 430px;
+  margin-bottom: 26px;
+  font-size: clamp(2.7rem, 3.15vw, 3.45rem);
+  line-height: 1.14;
 }
 
 h2 {
@@ -187,11 +188,15 @@ h3 {
   line-height: 1.78;
 }
 
+.hero-copy > p {
+  max-width: 440px;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 30px 0 18px;
+  margin: 28px 0 18px;
 }
 
 .button {
@@ -226,6 +231,7 @@ h3 {
 
 .hero-visual {
   position: relative;
+  width: min(100%, 500px);
   margin: 0;
   border: 1px solid var(--line);
   border-radius: 18px;
